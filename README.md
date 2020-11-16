@@ -1,6 +1,5 @@
 # API Documentation
 #     1) GetPlayer
-Example:
 local function getplayer()
   for i = 0, 64 do
      local e = entitylist.get_player_by_index(i)
@@ -26,7 +25,6 @@ is_scoped - returns entitie's scoped state (true/false)
 get_health - returns entitie's helath (int)
 
 #     2) LocalPlayer
-Example:
 local function localplayer()
   local lc_player = entitylist.get_local_player()
   local index = lc_player:get_index()
@@ -48,7 +46,6 @@ get_health - returns entitie's helath (int)
 
 client.add_callback("on_createmove", localplayer)
 #     3) SetProp
-Example:
 local lc_player = entitylist.get_local_player()
 lc_player:set_prop_bool("CBaseEntity", "m_bSpotted", true)
 
@@ -57,7 +54,6 @@ set_prop_int
 set_prop_float
 set_prop_bool
 #     4) SetBool, SetInt, SetFloat
-Example:
 menu.set_bool("Ragebot.enable", true)
 menu.set_int("Ragebot.fov", 180)
 menu.set_float("Esp.asus_props_amount", 0.5)
