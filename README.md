@@ -7,7 +7,7 @@
 #        client.log("index " .. tostring(i) .. " alive" )
 #      end
 #   end
-# end
+#                       end
 # client.add_callback("on_createmove", getplayer)
 2) LocalPlayer
 # local function localplayer()
