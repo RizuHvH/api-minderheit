@@ -1,13 +1,21 @@
 # API Documentation
 #     1) GetPlayer
 local function getplayer()
+
   for i = 0, 64 do
+  
      local e = entitylist.get_player_by_index(i)
+     
      if e ~= nil and e:get_alive() then
+     
        client.log("index " .. tostring(i) .. " alive" )
+       
      end
+     
   end
+  
 end
+
 client.add_callback("on_createmove", getplayer)
 
 Types:
