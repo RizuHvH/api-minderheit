@@ -54,6 +54,9 @@ set_prop_int
 set_prop_float
 set_prop_bool
 #     4) SetBool, SetInt, SetFloat
+
 menu.set_bool("Ragebot.enable", true)
+
 menu.set_int("Ragebot.fov", 180)
+
 menu.set_float("Esp.asus_props_amount", 0.5)
